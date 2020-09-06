@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Output } from '@angular/core';
 
 @Component({
   selector: 'rk-observable',
@@ -6,13 +6,17 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./observable.component.css']
 })
 export class ObservableComponent implements OnInit {
-  addToStream: any;
   nextObject: any;
+  output: any;
 
   ngOnInit(): void {
   }
 
   next(e): void {
     this.nextObject = e.detail;
+  }
+
+  subs(e): void {
+    this.output = e.detail;
   }
 }

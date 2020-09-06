@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, OnDestroy, OnChanges, SimpleChanges, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'rk-stream',
@@ -7,6 +7,7 @@ import { Component, Input, OnDestroy, OnChanges, SimpleChanges } from '@angular/
 })
 export class StreamComponent implements OnChanges, OnDestroy {
   @Input() marble: string;
+  @Output() subscribe =  new EventEmitter();
   timer: number;
   dataIndex = 0;
 
@@ -14,6 +15,11 @@ export class StreamComponent implements OnChanges, OnDestroy {
     if(this.marble) {
       this.timer = setInterval(() => {
         this.dataIndex++;
+
+        if (this.dataIndex === 4) {
+          this.subscribe.emit(new CustomEvent('subscribe', { detail: this.marble}));
+          clearInterval(this.timer);
+        }
       }, 1000);
     }
   }
