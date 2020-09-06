@@ -19,4 +19,12 @@ export class ObservableComponent implements OnInit {
   subs(e): void {
     this.output = e.detail;
   }
+
+  resetNextObject(e): void {
+    this.nextObject = null;
+  }
+
+  resetOutput(e): void {
+    this.output = null;
+  }
 }
