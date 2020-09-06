@@ -1,6 +1,2 @@
-<div>{{ dataIndex === 0 ? '▓' : '│' }}</div>
-<div>{{ dataIndex === 1 ? '▓' : '│' }}</div>
-<div>{{ dataIndex === 2 ? '▓' : '│' }}</div>
-<div>{{ dataIndex === 3 ? '▓' : '│' }}</div>
-<div>▼</div>
-
+<rk-manual-trigger (trigger)="next($event)"></rk-manual-trigger>
+<rk-stream [marble]="nextObject"></rk-stream>
