@@ -21,4 +21,8 @@ export class ManualTriggerComponent implements OnInit {
     this.trigger.emit(new CustomEvent('trigger', { detail: obj}));
   }
 
+  public updateJson(e): void {
+    this.json = e.currentTarget.value;
+  }
+
 }

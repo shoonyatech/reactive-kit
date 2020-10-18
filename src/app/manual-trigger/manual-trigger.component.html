@@ -1,2 +1,2 @@
-<textarea [value]='json' class="h-32 border rounded p-2 blocks w-56"></textarea>
+<textarea [value]='json' class="h-32 border rounded p-2 blocks w-56" (input)="updateJson($event)"></textarea>
 <button (click)="send(json)" class="bg-blue-500 rounded block text-white p-2">Add the above json to stream</button>
