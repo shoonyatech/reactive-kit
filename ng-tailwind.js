@@ -1,11 +1,11 @@
 module.exports = {
   // Tailwind Paths
   configJS: 'tailwind.config.js',
-  sourceCSS: 'src/tailwind.css',
+  sourceCSS: 'src/tailwind.scss',
   outputCSS: 'src/tw-styles.css',
   watchRelatedFiles: [],
   // Sass
-  sass: false,
+  sass: 'sass',
   // PurgeCSS Settings
   purge: false,
   keyframes: false,
