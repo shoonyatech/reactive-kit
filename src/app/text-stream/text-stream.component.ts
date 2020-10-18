@@ -2,8 +2,8 @@ import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angu
 
 @Component({
   selector: 'rk-stream',
-  templateUrl: './stream.component.html',
-  styleUrls: ['./stream.component.css'],
+  templateUrl: './text-stream.component.html',
+  styleUrls: ['./text-stream.component.css'],
 })
 export class StreamComponent implements OnInit, OnDestroy {
   @Input() public marble: string;
@@ -37,7 +37,7 @@ export class StreamComponent implements OnInit, OnDestroy {
         this.added.emit(new CustomEvent('added', { detail: this.marble}));
       }
 
-    }, 1000);
+    }, 100);
   }
 
   public ngOnDestroy(): void {
