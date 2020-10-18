@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "ngtw build",
+    "prestart": "npm run build:prod",
     "start": "node server.js",
     "serve": "ng serve & ngtw watch",
     "build": "ngtw build && ng build",
+    "build:prod": "ngtw build && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
