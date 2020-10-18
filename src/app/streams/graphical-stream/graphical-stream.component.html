@@ -1,4 +1,9 @@
-<div class="my-2 ml-24">
-    <div [style.height.px]="length * 20" class="border w-2" [ngClass]="{ 'bg-green-300': !isLive, 'bg-red-300': isLive}" ></div>
-    <div class="text-3xl -ml-2 -mt-3" [ngClass]="{ 'text-green-300': !isLive, 'text-red-300': isLive}">▼</div>
+<div class="relative" [style.height.px]="length * slotHeight + 30" >
+    <div class="my-2 ml-24 absolute top-0 left-0">
+        <div [style.height.px]="length * slotHeight" class="border w-2" [ngClass]="{ 'bg-green-300': !isLive, 'bg-red-300': isLive}" ></div>
+        <div class="text-3xl -ml-2 -mt-3" [ngClass]="{ 'text-green-300': !isLive, 'text-red-300': isLive}">▼</div>
+    </div>
+    <div class="my-2 relative top-0 left-0">
+        <div [ngClass]="{ 'p-0' : !isLive, 'p-2': isLive}" class="slide-down bg-red-100 m-1 rounded w-56 absolute left-0" [style.top.px]="isLive ? length * slotHeight : 0" >{{ marble }}</div>
+    </div>
 </div>
