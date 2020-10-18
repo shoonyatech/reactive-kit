@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'rk-stream',
+  selector: 'rk-text-stream',
   templateUrl: './text-stream.component.html',
   styleUrls: ['./text-stream.component.css'],
 })

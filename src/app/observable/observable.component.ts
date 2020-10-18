@@ -16,15 +16,13 @@ export class ObservableComponent implements OnInit {
     this.nextObject = e.detail;
   }
 
-  public subs(e): void {
+  public resetNextObject(e): void {
+    this.nextObject = null;
     this.output = e.detail;
   }
 
-  public resetNextObject(e): void {
-    this.nextObject = null;
-  }
-
   public resetOutput(e): void {
+    this.nextObject = null;
     this.output = null;
   }
 }

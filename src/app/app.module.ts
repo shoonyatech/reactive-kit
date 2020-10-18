@@ -8,6 +8,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { StreamComponent } from './streams/text-stream/text-stream.component';
 import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.component';
 import { ListOutputComponent } from './outputs/list-output/list-output.component';
+import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-stream.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -19,6 +20,7 @@ import { ListOutputComponent } from './outputs/list-output/list-output.component
     ConsoleOutputComponent,
     TimerTriggerComponent,
     ListOutputComponent,
+    GraphicalStreamComponent,
   ],
   imports: [
     BrowserModule,
