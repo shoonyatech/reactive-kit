@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StreamComponent } from './stream.component';
+import { StreamComponent } from './text-stream.component';
 
 describe('StreamComponent', () => {
   let component: StreamComponent;

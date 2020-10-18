@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ConsoleOutputComponent } from './outputs/console-output/console-output.component';
 import { ManualTriggerComponent } from './triggers/manual-trigger/manual-trigger.component';
 import { ObservableComponent } from './observable/observable.component';
-import { StreamComponent } from './stream/stream.component';
+import { StreamComponent } from './text-stream/text-stream.component';
 import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.component';
 import { ListOutputComponent } from './outputs/list-output/list-output.component';
 
