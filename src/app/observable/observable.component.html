@@ -1,3 +1,3 @@
-<rk-manual-trigger (trigger)="next($event)"></rk-manual-trigger>
+<rk-timer-trigger (trigger)="next($event)"></rk-timer-trigger>
 <rk-stream length="6" [marble]="nextObject" (subscribe)="subs($event)" (added)="resetNextObject($event)"></rk-stream>
 <rk-console-output [msg]="output" (printed)="resetOutput($event)"></rk-console-output>
