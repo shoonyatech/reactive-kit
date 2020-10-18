@@ -8,7 +8,7 @@ describe('ConsoleOutputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConsoleOutputComponent ]
+      declarations: [ ConsoleOutputComponent ],
     })
     .compileComponents();
   }));

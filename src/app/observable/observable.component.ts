@@ -1,30 +1,30 @@
-import { Component, OnInit, OnDestroy, Output } from '@angular/core';
+import { Component, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'rk-observable',
   templateUrl: './observable.component.html',
-  styleUrls: ['./observable.component.css']
+  styleUrls: ['./observable.component.css'],
 })
 export class ObservableComponent implements OnInit {
-  nextObject: any;
-  output: any;
+  public nextObject: any;
+  public output: any;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
-  next(e): void {
+  public next(e): void {
     this.nextObject = e.detail;
   }
 
-  subs(e): void {
+  public subs(e): void {
     this.output = e.detail;
   }
 
-  resetNextObject(e): void {
+  public resetNextObject(e): void {
     this.nextObject = null;
   }
 
-  resetOutput(e): void {
+  public resetOutput(e): void {
     this.output = null;
   }
 }

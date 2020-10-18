@@ -1,26 +1,26 @@
-import { Component, Input, Output, OnDestroy, EventEmitter, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'rk-stream',
   templateUrl: './stream.component.html',
-  styleUrls: ['./stream.component.css']
+  styleUrls: ['./stream.component.css'],
 })
 export class StreamComponent implements OnInit, OnDestroy {
-  @Input() marble: string;
-  @Input() length: number;
-  @Output() added =  new EventEmitter();
-  @Output() subscribe =  new EventEmitter();
-  slots: string[];
-  timer: number;
-  dataIndex = 0;
+  @Input() public marble: string;
+  @Input() public length: number;
+  @Output() public added =  new EventEmitter();
+  @Output() public subscribe =  new EventEmitter();
+  public slots: string[];
+  public timer: number;
+  public dataIndex = 0;
 
   constructor() {
     this.slots = [];
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.length = this.length || 4;
-    for(let i = 0; i < this.length; i++) {
+    for (let i = 0; i < this.length; i++) {
       this.slots.push(null);
     }
 
@@ -40,7 +40,7 @@ export class StreamComponent implements OnInit, OnDestroy {
     }, 1000);
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     clearInterval(this.timer);
   }
 }
