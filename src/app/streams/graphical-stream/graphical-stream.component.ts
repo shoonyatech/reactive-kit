@@ -10,6 +10,7 @@ export class GraphicalStreamComponent implements OnChanges {
   @Input() public length: number;
   @Output() public added =  new EventEmitter();
   public isLive = false;
+  public slotHeight = 30;
 
   public ngOnChanges(changes: SimpleChanges): void {
     if (changes.marble && changes.marble.currentValue) {
