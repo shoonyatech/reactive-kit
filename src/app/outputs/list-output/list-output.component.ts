@@ -1,32 +1,22 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'rk-list-output',
   templateUrl: './list-output.component.html',
   styleUrls: ['./list-output.component.css']
 })
-export class ListOutputComponent implements OnInit {
-  @Input() public msg: string;
+export class ListOutputComponent implements OnChanges {
+  @Input() public marble: string;
   @Output() public printed =  new EventEmitter();
-  public output = '';
-  public skip = true;
   public list = [];
 
   constructor() { }
 
-  public ngOnInit(): void {
-    setInterval(() => {
-      if (this.msg) {
-        if (this.skip) {
-          this.skip = false;
-        } else {
-          this.list.unshift(this.msg);
-          this.msg = null;
-          this.printed.emit(new CustomEvent('printed', { detail: this.msg}));
-          this.skip = true;
-        }
-      }
-    }, 1000);
+  public ngOnChanges(changes: SimpleChanges): void {
+    if (changes.marble && changes.marble.currentValue) {
+        const currentMarble = changes.marble.currentValue;
+        this.list.unshift(currentMarble);
+        this.printed.emit(new CustomEvent('printed', { detail: currentMarble}));
+    }
   }
-
 }
