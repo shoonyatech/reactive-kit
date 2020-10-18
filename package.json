@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "prestart": "ngtw build",
     "start": "node server.js",
-    "build": "ng build",
+    "serve": "ng serve & ngtw watch",
+    "build": "ngtw build && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -44,6 +46,7 @@
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
+    "tailwindcss": "^1.9.4",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0"
   },
