@@ -8,7 +8,7 @@ describe('TimerTriggerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimerTriggerComponent ]
+      declarations: [ TimerTriggerComponent ],
     })
     .compileComponents();
   }));

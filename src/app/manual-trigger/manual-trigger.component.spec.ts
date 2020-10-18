@@ -8,7 +8,7 @@ describe('ManualTriggerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ManualTriggerComponent ]
+      declarations: [ ManualTriggerComponent ],
     })
     .compileComponents();
   }));

@@ -8,7 +8,7 @@ describe('StreamComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StreamComponent ]
+      declarations: [ StreamComponent ],
     })
     .compileComponents();
   }));

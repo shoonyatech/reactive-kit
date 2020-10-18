@@ -1,22 +1,22 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'rk-console-output',
   templateUrl: './console-output.component.html',
-  styleUrls: ['./console-output.component.css']
+  styleUrls: ['./console-output.component.css'],
 })
 export class ConsoleOutputComponent implements OnInit {
-  @Input() msg: string;
-  @Output() printed =  new EventEmitter();
-  output = '';
-  skip = true;
+  @Input() public msg: string;
+  @Output() public printed =  new EventEmitter();
+  public output = '';
+  public skip = true;
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     setInterval(() => {
       if (this.msg) {
-        if(this.skip) {
+        if (this.skip) {
           this.skip = false;
         } else {
           this.output = this.output + ' ' + this.msg;
