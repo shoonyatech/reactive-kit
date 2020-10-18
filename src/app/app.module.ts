@@ -7,6 +7,7 @@ import { ManualTriggerComponent } from './triggers/manual-trigger/manual-trigger
 import { ObservableComponent } from './observable/observable.component';
 import { StreamComponent } from './stream/stream.component';
 import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.component';
+import { ListOutputComponent } from './outputs/list-output/list-output.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -17,6 +18,7 @@ import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.co
     StreamComponent,
     ConsoleOutputComponent,
     TimerTriggerComponent,
+    ListOutputComponent,
   ],
   imports: [
     BrowserModule,
