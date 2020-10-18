@@ -6,6 +6,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./manual-trigger.component.css'],
 })
 export class ManualTriggerComponent implements OnInit {
+  public json = `{
+  fruit: 'apple',
+  color: 'red'
+}`;
 
   @Output() public trigger = new EventEmitter();
   constructor() { }
