@@ -6,11 +6,12 @@
     "prestart": "npm run build:prod",
     "start": "node server.js",
     "serve": "ng serve & ./node_modules/.bin/ngtw watch",
-    "build": "./node_modules/.bin/ngtw build && ng build",
-    "build:prod": "./node_modules/.bin/ngtw build && ng build --prod",
+    "build": "ng build",
+    "build:tailwind": "./node_modules/.bin/ngtw build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
