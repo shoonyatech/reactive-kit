@@ -8,6 +8,7 @@
     "serve": "ng serve & ./node_modules/.bin/ngtw watch",
     "build": "ng build",
     "build:tailwind": "./node_modules/.bin/ngtw build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
