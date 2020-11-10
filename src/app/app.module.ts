@@ -10,6 +10,7 @@ import { StreamComponent } from './streams/text-stream/text-stream.component';
 import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.component';
 import { ListOutputComponent } from './outputs/list-output/list-output.component';
 import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-stream.component';
+import { CodeWindowComponent } from './windows/code-window/code-window.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-s
     TimerTriggerComponent,
     ListOutputComponent,
     GraphicalStreamComponent,
+    CodeWindowComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
