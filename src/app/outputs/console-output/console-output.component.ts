@@ -6,12 +6,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./console-output.component.css'],
 })
 export class ConsoleOutputComponent implements OnInit {
-  @Input() public msg: string;
-  @Output() public printed =  new EventEmitter();
+  @Input() public msg!: string | undefined;
+  @Output() public printed = new EventEmitter();
   public output = '';
   public skip = true;
 
-  constructor() { }
+  constructor() {}
 
   public ngOnInit(): void {
     setInterval(() => {
@@ -20,12 +20,11 @@ export class ConsoleOutputComponent implements OnInit {
           this.skip = false;
         } else {
           this.output = this.output + ' ' + this.msg;
-          this.msg = null;
-          this.printed.emit(new CustomEvent('printed', { detail: this.msg}));
+          this.msg = undefined;
+          this.printed.emit(new CustomEvent('printed', { detail: this.msg }));
           this.skip = true;
         }
       }
     }, 1000);
   }
-
 }

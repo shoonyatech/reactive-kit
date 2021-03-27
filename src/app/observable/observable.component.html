@@ -1,3 +1,7 @@
 <rk-manual-trigger (trigger)="next($event)"></rk-manual-trigger>
-<rk-graphical-stream length="6" [marble]="nextObject" (added)="resetNextObject($event)"></rk-graphical-stream>
-<rk-list-output [marble]="output" (printed)="resetOutput($event)"></rk-list-output>
+<rk-graphical-stream
+  [length]="6"
+  [marble]="nextObject"
+  (added)="resetNextObject($event)"
+></rk-graphical-stream>
+<rk-list-output [marble]="output" (printed)="resetOutput()"></rk-list-output>

@@ -12,17 +12,15 @@ export class ManualTriggerComponent implements OnInit {
 }`;
 
   @Output() public trigger = new EventEmitter();
-  constructor() { }
+  constructor() {}
 
-  public ngOnInit(): void {
+  public ngOnInit(): void {}
+
+  public send(obj: any): void {
+    this.trigger.emit(new CustomEvent('trigger', { detail: obj }));
   }
 
-  public send(obj): void {
-    this.trigger.emit(new CustomEvent('trigger', { detail: obj}));
-  }
-
-  public updateJson(e): void {
+  public updateJson(e: any): void {
     this.json = e.currentTarget.value;
   }
-
 }
