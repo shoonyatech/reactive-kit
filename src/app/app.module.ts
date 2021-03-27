@@ -22,9 +22,7 @@ import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-s
     ListOutputComponent,
     GraphicalStreamComponent,
   ],
-  imports: [
-    BrowserModule,
-  ],
+  imports: [BrowserModule],
   providers: [],
 })
-export class AppModule { }
+export class AppModule {}

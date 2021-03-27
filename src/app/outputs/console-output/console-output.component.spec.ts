@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ConsoleOutputComponent } from './console-output.component';
 
@@ -6,7 +6,7 @@ describe('ConsoleOutputComponent', () => {
   let component: ConsoleOutputComponent;
   let fixture: ComponentFixture<ConsoleOutputComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ConsoleOutputComponent ],
     })

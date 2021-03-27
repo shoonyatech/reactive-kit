@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "rk",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/tw-styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -39,7 +39,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -88,7 +87,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/tw-styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -119,6 +118,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "reactive-kit"
 }
