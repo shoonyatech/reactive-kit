@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./code-window.component.css']
 })
 export class CodeWindowComponent implements OnInit {
-  @Input() code: string;
+  @Input() code = '';
   constructor() { }
 
   ngOnInit(): void {
