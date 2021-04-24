@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'rk-observable',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./observable.component.css'],
 })
 export class ObservableComponent implements OnInit {
-  public nextObject: string | undefined;
-  public output: string | undefined;
+  @Output() public code = new EventEmitter();
+  public nextObject: any;
+  public output: any;
 
-  public ngOnInit(): void {}
+  public ngOnInit(): void {
+    const codeOutput = ``;
+
+    this.code.emit(new CustomEvent('code', { detail: codeOutput}));
+  }
 
   public next(e: CustomEvent): void {
     this.nextObject = e.detail;
