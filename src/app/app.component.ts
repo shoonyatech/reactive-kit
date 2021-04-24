@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title = 'reactive-kit';
-  public codeOutput: string;
+  public codeOutput = '';
 
-  showCode(e) {
+  showCode(e:CustomEvent) {
     this.codeOutput = e.detail;
   }
 }

@@ -7,8 +7,8 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class PipeComponent  implements OnChanges {
 
-  private operators = [{},{}];
-  private operatorLength = 300;
+  public operators = [{},{}];
+  public operatorLength = 300;
   public isLive = false;
 
   constructor() { }
