@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'reactive-kit';
+  public title = 'reactive-kit';
+  public codeOutput: string;
+
+  showCode(e) {
+    this.codeOutput = e.detail;
+  }
 }
