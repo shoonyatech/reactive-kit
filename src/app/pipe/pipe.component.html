@@ -1,0 +1,5 @@
+<div [style.height.px]="operatorLength * operators.length + 100" class="bg-blue-200 w-32" >
+    <div class="my-2 ml-24" *ngFor="let operator of operators">
+        <div [style.height.px]="100" [style.width.px]="50" class="border w-2" [ngClass]="{ 'bg-green-300': !isLive, 'bg-red-300': isLive}" ></div>
+    </div>
+</div>

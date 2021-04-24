@@ -11,6 +11,7 @@ import { TimerTriggerComponent } from './triggers/timer-trigger/timer-trigger.co
 import { ListOutputComponent } from './outputs/list-output/list-output.component';
 import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-stream.component';
 import { CodeWindowComponent } from './windows/code-window/code-window.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CodeWindowComponent } from './windows/code-window/code-window.component
     ListOutputComponent,
     GraphicalStreamComponent,
     CodeWindowComponent,
+    PipeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
