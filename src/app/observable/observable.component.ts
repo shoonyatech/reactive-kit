@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/cor
 @Component({
   selector: 'rk-observable',
   templateUrl: './observable.component.html',
-  styleUrls: ['./observable.component.css'],
+  styleUrls: ['./observable.component.scss'],
 })
 export class ObservableComponent implements OnInit {
   @Output() public code = new EventEmitter();
