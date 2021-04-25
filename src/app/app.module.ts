@@ -12,6 +12,7 @@ import { ListOutputComponent } from './outputs/list-output/list-output.component
 import { GraphicalStreamComponent } from './streams/graphical-stream/graphical-stream.component';
 import { CodeWindowComponent } from './windows/code-window/code-window.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { OperatorComponent } from './operator/operator.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PipeComponent } from './pipe/pipe.component';
     GraphicalStreamComponent,
     CodeWindowComponent,
     PipeComponent,
+    OperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
