@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'rk-list-output',
   templateUrl: './list-output.component.html',
-  styleUrls: ['./list-output.component.css'],
+  styleUrls: ['./list-output.component.scss'],
 })
 export class ListOutputComponent implements OnChanges {
   @Input() public marble!: string | undefined;

@@ -3,11 +3,11 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'rk-pipe',
   templateUrl: './pipe.component.html',
-  styleUrls: ['./pipe.component.css']
+  styleUrls: ['./pipe.component.scss']
 })
 export class PipeComponent  implements OnChanges {
 
-  public operators = [{},{}];
+  public operators = [{operatorNAme: 'map', input: {fruit: 'apple', color: 'red'}},{}];
   public operatorLength = 300;
   public isLive = false;
 

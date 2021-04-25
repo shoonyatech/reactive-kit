@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'rk-timer-trigger',
   templateUrl: './timer-trigger.component.html',
-  styleUrls: ['./timer-trigger.component.css'],
+  styleUrls: ['./timer-trigger.component.scss'],
 })
 export class TimerTriggerComponent implements OnInit {
   @Output() public trigger = new EventEmitter();

@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'rk-text-stream',
   templateUrl: './text-stream.component.html',
-  styleUrls: ['./text-stream.component.css'],
+  styleUrls: ['./text-stream.component.scss'],
 })
 export class StreamComponent implements OnInit, OnDestroy {
   @Input() public marble?: string;

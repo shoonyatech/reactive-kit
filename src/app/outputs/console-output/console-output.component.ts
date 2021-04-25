@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'rk-console-output',
   templateUrl: './console-output.component.html',
-  styleUrls: ['./console-output.component.css'],
+  styleUrls: ['./console-output.component.scss'],
 })
 export class ConsoleOutputComponent implements OnInit {
   @Input() public msg!: string | undefined;

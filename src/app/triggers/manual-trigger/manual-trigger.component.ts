@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'rk-manual-trigger',
   templateUrl: './manual-trigger.component.html',
-  styleUrls: ['./manual-trigger.component.css'],
+  styleUrls: ['./manual-trigger.component.scss'],
 })
 export class ManualTriggerComponent implements OnInit {
   public json = `{

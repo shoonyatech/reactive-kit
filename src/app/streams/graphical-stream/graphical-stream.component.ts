@@ -10,7 +10,7 @@ import {
 @Component({
   selector: 'rk-graphical-stream',
   templateUrl: './graphical-stream.component.html',
-  styleUrls: ['./graphical-stream.component.css'],
+  styleUrls: ['./graphical-stream.component.scss'],
 })
 export class GraphicalStreamComponent implements OnChanges {
   @Input() public marble!: string | undefined;
